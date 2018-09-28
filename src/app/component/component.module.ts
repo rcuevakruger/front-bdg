@@ -3,8 +3,14 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JsonpModule } from '@angular/http';
+// import { BrowserModule } from '@angular/platform-browser';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { HttpModule } from "@angular/http";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+// import { AppRoutingModule } from '.././app-routing.module';
+
 
 import { ComponentsRoutes } from './component.routing';
 import { NgbdpregressbarBasic } from './progressbar/progressbar.component';
@@ -22,15 +28,20 @@ import { NgbdtimepickerBasic } from './timepicker/timepicker.component';
 import { NgbdtypeheadBasic } from './typehead/typehead.component';
 import { CardsComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { BilleteraComponent } from "./Billetera/Billetera.component";
 
 @NgModule({
   imports: [
     CommonModule,
+    // BrowserModule,
     RouterModule.forChild(ComponentsRoutes),
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     JsonpModule,
-    NgbModule
+    HttpModule,
+    NgbModule,
+    // AppRoutingModule
   ],
   declarations: [
     NgbdpregressbarBasic,
@@ -47,7 +58,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
     NgbdtimepickerBasic,
     NgbdtypeheadBasic,
     CardsComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    BilleteraComponent
   ]
 })
 

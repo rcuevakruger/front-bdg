@@ -25,6 +25,7 @@ export const ROUTES: RouteInfo[] = [
             { path: '/component/timepicker', title: 'Timepicker', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/buttons', title: 'Button', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/cards', title: 'Card', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
+            { path: '/component/Billetera', title: 'Billetera', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
         ]
     },
     {

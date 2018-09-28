@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { HttpModule } from "@angular/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
+import { DataService } from "./data.service";
 
 import { FullComponent } from './layouts/full/full.component';
 import { BlankComponent } from './layouts/blank/blank.component';
@@ -44,14 +46,17 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     BrowserAnimationsModule,   
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    HttpModule,
     NgbModule.forRoot(),  
     PerfectScrollbarModule,
     AppRoutingModule
   ],
   providers: [
+    DataService,
       {
       provide: PERFECT_SCROLLBAR_CONFIG,
-      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
     },{
     provide: LocationStrategy,
     useClass: HashLocationStrategy
