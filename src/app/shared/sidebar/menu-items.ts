@@ -29,7 +29,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '', title: 'test', icon: 'mdi mdi-chevron-double-right', class: 'has-arrow', label: '', labelClass: '', extralink: false,
+        path: '', title: 'test', icon: 'mdi mdi-plus', class: 'has-arrow', label: '', labelClass: '', extralink: false,
         submenu: [
 /*             { path: '/component/accordion', title: 'Accordion', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/alert', title: 'Alert', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },

@@ -9,7 +9,7 @@ import { StarterComponent } from './starter.component';
 const routes: Routes = [{
 	path: '',
 	data: {
-        title: 'Starter Page',
+        title: 'Inicio',
         urls: [{title: 'Panel de control',url: '/dashboard'},{title: 'Inicio'}]
     },
 	component: StarterComponent
