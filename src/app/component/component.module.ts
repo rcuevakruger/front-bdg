@@ -29,6 +29,7 @@ import { NgbdtypeheadBasic } from './typehead/typehead.component';
 import { CardsComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { BilleteraComponent } from "./Billetera/Billetera.component";
+import { CobrarMillasComponent } from "./CobrarMillas/CobrarMillas.component";
 
 @NgModule({
   imports: [
@@ -59,7 +60,8 @@ import { BilleteraComponent } from "./Billetera/Billetera.component";
     NgbdtypeheadBasic,
     CardsComponent,
     ButtonsComponent,
-    BilleteraComponent
+    BilleteraComponent,
+    CobrarMillasComponent
   ]
 })
 

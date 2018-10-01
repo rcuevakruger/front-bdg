@@ -16,6 +16,7 @@ import { NgbdtypeheadBasic } from './typehead/typehead.component';
 import { CardsComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { BilleteraComponent } from "./Billetera/Billetera.component";
+import { CobrarMillasComponent } from "./CobrarMillas/CobrarMillas.component";
 
 export const ComponentsRoutes: Routes = [
   {
@@ -147,6 +148,14 @@ export const ComponentsRoutes: Routes = [
       data: {
         title: 'Billetera',
         urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Billetera'}]
+      }
+    },
+    {
+      path: 'CobrarMillas',
+      component: CobrarMillasComponent,
+      data: {
+        title: 'Cobrar',
+        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Cobrar'}]
       }
     }]
   }

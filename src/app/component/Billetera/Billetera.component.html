@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="addAssetModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -136,22 +137,57 @@
 <div class="container">
 	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
 		<strong>Error:</strong> {{errorMessage}}
-	</div>
+  </div>
+  </div>
   
 
 <div class="col-lg-12">
   <div class="card">
       <div class="card-body">
+
+<!-- 
+
+                      <ng-template #content let-c="close" let-d="dismiss">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Modal title</h4>
+                          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>One fine body&hellip;</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                        </div>
+                      </ng-template>
+      
+              <button class="btn btn-lg btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">Launch demo modal</button>
+              <div class="m-t-20">{{closeResult}}</div> -->
+
+
           <h1 class="card-title" style="text-align: center;">Billetera</h1>
           <h6 class="card-subtitle"> 
-            <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
+
+              <button class="btn btn-success waves-effect waves-light" type="button"(click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
+                  <span class="btn-label">
+                  <i class="fa fa-plus"></i>
+                  </span>                  
+                    Crear Billetera                
+                  </button>
+
+            <!-- <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
               <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
                   <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                     <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"/>
                   </svg>
               </span>            
               Crear Billetera
-            </button> <code></code></h6>
+            </button> -->
+            
+            
+            
+            <code></code></h6>
           <div class="table-responsive">
               <table class="table">
                   <thead>
@@ -160,7 +196,7 @@
             
                           <th class="info">Propietario</th>
                       
-                          <th class="info">Valor Actual</th>
+                          <th class="info">Balance</th>
                       
                           <th class="info-actions"></th>
                         
