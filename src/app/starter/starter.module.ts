@@ -10,7 +10,7 @@ const routes: Routes = [{
 	path: '',
 	data: {
         title: 'Starter Page',
-        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Starter Page'}]
+        urls: [{title: 'Panel de control',url: '/dashboard'},{title: 'Inicio'}]
     },
 	component: StarterComponent
 }];

@@ -146,7 +146,7 @@ export const ComponentsRoutes: Routes = [
       component: BilleteraComponent,
       data: {
         title: 'Billetera',
-        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'ngComponent'},{title: 'Billetera'}]
+        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Billetera'}]
       }
     }]
   }
