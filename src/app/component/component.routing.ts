@@ -147,7 +147,7 @@ export const ComponentsRoutes: Routes = [
       component: BilleteraComponent,
       data: {
         title: 'Billetera',
-        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Billetera'}]
+        urls: [{title: 'Inicio',url: '/dashboard'},{title: 'Billetera'}]
       }
     },
     {
@@ -155,7 +155,7 @@ export const ComponentsRoutes: Routes = [
       component: CobrarMillasComponent,
       data: {
         title: 'Cobrar',
-        urls: [{title: 'Dashboard',url: '/dashboard'},{title: 'Cobrar'}]
+        urls: [{title: 'Inicio',url: '/dashboard'},{title: 'Cobrar'}]
       }
     }]
   }
