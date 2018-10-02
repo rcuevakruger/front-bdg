@@ -11,6 +11,10 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'Transacciones', icon: '', class: 'nav-small-cap', label: '', labelClass: '', extralink: true, submenu: []
     },{
         path: '/component/CobrarMillas', title: 'Cobrar', icon: 'mdi mdi-contrast', class: '', label: '', labelClass: '', extralink: false, submenu: [ ]
+    },{
+        path: '/component/CambiarMillas', title: 'Cambiar', icon: 'mdi mdi-contrast', class: '', label: '', labelClass: '', extralink: false, submenu: [ ]
+    },{
+        path: '/component/AcreditarMillas', title: 'Acreditar', icon: 'mdi mdi-contrast', class: '', label: '', labelClass: '', extralink: false, submenu: [ ]
     },
     {
         path: '', title: 'test', icon: 'mdi mdi-plus', class: 'has-arrow', label: '', labelClass: '', extralink: false,
