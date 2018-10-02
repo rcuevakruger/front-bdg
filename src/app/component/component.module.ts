@@ -30,6 +30,12 @@ import { CardsComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { BilleteraComponent } from "./Billetera/Billetera.component";
 import { CobrarMillasComponent } from "./CobrarMillas/CobrarMillas.component";
+import { AcreditarMillasComponent } from "./AcreditarMillas/AcreditarMillas.component";
+import { CambiarMillasComponent } from "./CambiarMillas/CambiarMillas.component";
+import { ClienteComponent } from "./Cliente/Cliente.component";
+import { ComercioComponent } from "./Comercio/Comercio.component";
+import { EmisorComponent } from "./Emisor/Emisor.component";
+import { PropietarioComponent } from "./Propietario/Propietario.component";
 
 @NgModule({
   imports: [
@@ -61,7 +67,13 @@ import { CobrarMillasComponent } from "./CobrarMillas/CobrarMillas.component";
     CardsComponent,
     ButtonsComponent,
     BilleteraComponent,
-    CobrarMillasComponent
+    CobrarMillasComponent,
+    AcreditarMillasComponent,
+    CambiarMillasComponent,
+    ClienteComponent,
+    ComercioComponent,
+    EmisorComponent,
+    PropietarioComponent
   ]
 })
 
