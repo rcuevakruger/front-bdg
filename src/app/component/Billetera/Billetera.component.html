@@ -10,19 +10,12 @@
       <form [formGroup]="myForm">
         <div class="modal-body">
 
-
-          
-
-            
               <div class="form-group text-left">
                 <label for="idBilletera">idBilletera</label>
                 
                   <input formControlName="idBilletera" type="text" class="form-control">
                 
               </div>
-            
-          
-
             
               <div class="form-group text-left">
                 <label for="propietario">propietario</label>
@@ -31,17 +24,14 @@
                 
               </div>
             
-          
 
-            
               <div class="form-group text-left">
                 <label for="valorActual">valorActual</label>
                 
                   <input formControlName="valorActual" type="number" class="form-control">
                 
               </div>
-            
-          
+   
 
         </div>
         <div class="modal-footer">
@@ -53,8 +43,6 @@
     </div>
   </div>
 </div>
-
-
 
 
 <div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
@@ -168,13 +156,72 @@
 
           <h1 class="card-title" style="text-align: center;">Billetera</h1>
           <h6 class="card-subtitle"> 
-
+<!-- 
               <button class="btn btn-success waves-effect waves-light" type="button"(click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
                   <span class="btn-label">
                   <i class="fa fa-plus"></i>
                   </span>                  
                     Crear Billetera                
-                  </button>
+                  </button> -->
+
+
+                      <ng-template #content let-c="close" let-d="dismiss">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal title</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                        <!-- Cuerpo del modal -->
+
+                        <form [formGroup]="myForm">
+                          <div class="modal-body">
+                  
+                                <div class="form-group text-left">
+                                  <label for="idBilletera">idBilletera</label>
+                                  
+                                    <input formControlName="idBilletera" type="text" placeholder="Billetera id" class="form-control">
+                                  
+                                </div>
+                              
+                                <div class="form-group text-left">
+                                  <label for="propietario">propietario</label>
+                                  
+                                      <textarea formControlName="propietario" class="form-control" rows="3"></textarea>
+                                  
+                                </div>
+                              
+                  
+                                <div class="form-group text-left">
+                                  <label for="valorActual">valorActual</label>
+                                  
+                                    <input formControlName="valorActual" type="number" class="form-control">
+                                  
+                                </div>
+                     
+                  
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancel</button>
+                            <button (click)="addAsset(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                  
+                          </div>
+                        </form>
+
+                        <!-- Fin cuerpo del modal -->
+
+                      </div>
+                    </ng-template>
+            
+                    <button class="btn btn-success waves-effect waves-light" (click)="open2(content)">
+                    <span class="btn-label">
+                      <i class="fa fa-plus"></i>
+                      </span>                  
+                      Crear Billetera                
+                    </button>
+
 
             <!-- <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
               <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
