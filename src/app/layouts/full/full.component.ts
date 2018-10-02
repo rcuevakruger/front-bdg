@@ -10,7 +10,7 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 })
 export class FullComponent implements OnInit {
 
-    color = 'blue';
+    color = '#f78d28';
     showSettings = false;
     showMinisidebar = false; 
     showDarktheme = false;
