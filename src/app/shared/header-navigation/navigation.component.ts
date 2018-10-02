@@ -13,13 +13,13 @@ export class NavigationComponent implements AfterViewInit {
     }
 
     // This is for Notifications
-    notifications: Object[] = [{
+    notifications: Object[] = [/* {
       round: 'round-danger',
       icon: 'ti-link',
       title: 'Luanch Admin',    
       subject: 'Just see the my new admin!',
       time: '9:30 AM'  
-    }, {
+    }, */ /* {
       round: 'round-success',
       icon: 'ti-calendar',
       title: 'Event today',    
@@ -31,16 +31,16 @@ export class NavigationComponent implements AfterViewInit {
       title: 'Settings',    
       subject: 'You can customize this template as you want',
       time: '9:08 AM'
-    }, {
+    },  */{
       round: 'round-primary',
       icon: 'ti-user',
-      title: 'Pavan kumar',    
-      subject: 'Just see the my admin!',
+      title: 'Notificacion',    
+      subject: 'De prueba',
       time: '9:00 AM'
     }];
     
     // This is for Mymessages
-    mymessages: Object[] = [{
+    mymessages: Object[] = [/* {
       useravatar: 'assets/images/users/1.jpg',
       status: 'online',
       from: 'Pavan kumar',    
@@ -58,11 +58,11 @@ export class NavigationComponent implements AfterViewInit {
       from: 'Arijit Sinh',    
       subject: 'I am a singer!',
       time: '9:08 AM'
-    }, {
-      useravatar: 'assets/images/users/4.jpg',
+    }, */ {
+      useravatar: 'assets/images/users/lego-face.png',
       status: 'offline',
-      from: 'Pavan kumar',    
-      subject: 'Just see the my admin!',
+      from: 'Carlos Pozo',    
+      subject: 'Buenos dias',
       time: '9:00 AM'
     }];
       

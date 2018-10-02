@@ -133,7 +133,7 @@ export class BilleteraComponent implements OnInit {
     this.asset = {
       $class: 'com.kruger.millas.activos.Billetera',
       'idBilletera': this.idBilletera.value,
-      'propietario': this.propietario.value,
+      'propietario': "\""+this.propietario.value+"\"",
       'valorActual': this.valorActual.value
     };
 
