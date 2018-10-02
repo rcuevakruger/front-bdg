@@ -36,6 +36,7 @@ import { ClienteComponent } from "./Cliente/Cliente.component";
 import { ComercioComponent } from "./Comercio/Comercio.component";
 import { EmisorComponent } from "./Emisor/Emisor.component";
 import { PropietarioComponent } from "./Propietario/Propietario.component";
+import { LoginComponent } from "./login/login.component";
 
 @NgModule({
   imports: [
@@ -73,7 +74,8 @@ import { PropietarioComponent } from "./Propietario/Propietario.component";
     ClienteComponent,
     ComercioComponent,
     EmisorComponent,
-    PropietarioComponent
+    PropietarioComponent,
+    LoginComponent
   ]
 })
 

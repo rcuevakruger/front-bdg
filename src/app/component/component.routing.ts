@@ -23,6 +23,7 @@ import { ClienteComponent } from "./Cliente/Cliente.component";
 import { ComercioComponent } from "./Comercio/Comercio.component";
 import { EmisorComponent } from "./Emisor/Emisor.component";
 import { PropietarioComponent } from "./Propietario/Propietario.component";
+import { LoginComponent } from './login/login.component';
 
 export const ComponentsRoutes: Routes = [
   {
@@ -211,6 +212,14 @@ export const ComponentsRoutes: Routes = [
         title: 'Propietario',
         urls: [{title: 'Inicio',url: '/dashboard'},{title: 'Propietario'}]
       }
-    }]
+    },
+    {
+      path: 'Login',
+      component: LoginComponent,
+      data: {
+        title: 'Login',
+        urls: [{title: 'Inicio',url: '/dashboard'},{title: 'Login'}]
+      }
+    },]
   }
 ];
