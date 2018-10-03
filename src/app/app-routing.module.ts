@@ -10,16 +10,25 @@ export const routes: Routes = [
     path: '',
     component: FullComponent,
     children: [
-        { path: '', redirectTo: '/starter', pathMatch: 'full' },
+        { path: '', redirectTo: '/authentication/login', pathMatch: 'full' },
         { path: 'starter', loadChildren: './starter/starter.module#StarterModule' },
         { path: 'component', loadChildren: './component/component.module#ComponentsModule' }
     ]
 }, 
 {
+    path: '',
+    component: BlankComponent,
+    children: [
+        {
+            path: 'authentication',
+            loadChildren: './authentication/authentication.module#AuthenticationModule'
+        }
+    ]
+}, 
+{
     path: '**',
-    redirectTo: 'starter' 
+    redirectTo: '404' 
 }];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes), NgbModule.forRoot()],
     exports: [RouterModule],
