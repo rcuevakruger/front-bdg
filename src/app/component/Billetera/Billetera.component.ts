@@ -37,7 +37,7 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
 })
 
 export class BilleteraComponent implements OnInit {
-  closeResult: string;
+ closeResult: string;
 
   myForm: FormGroup;
 

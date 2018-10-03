@@ -1,85 +1,3 @@
-<div class="modal fade" id="addTransactionModal" tabindex="-1" role="dialog" aria-labelledby="addTransactionModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addTransactionModalLabel">Crear Transaccion</h4>
-          <p class="modal-intro">Llenar el siguiente formulario.</p>
-      </div>
-      <form [formGroup]="myForm">
-        <div class="modal-body">
-
-
-          
-
-            
-              <div class="form-group text-left">
-                <label for="billeteraOrigen">billeteraOrigen</label>
-                
-                    <textarea formControlName="billeteraOrigen" class="form-control" rows="3"></textarea>
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="billeteraDestino">billeteraDestino</label>
-                
-                    <textarea formControlName="billeteraDestino" class="form-control" rows="3"></textarea>
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="valorTransaccion">valorTransaccion</label>
-                
-                  <input formControlName="valorTransaccion" type="number" class="form-control">
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="objetoCambio">objetoCambio</label>
-                
-                  <input formControlName="objetoCambio" type="text" class="form-control">
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="referenciaCambio">referenciaCambio</label>
-                
-                  <input formControlName="referenciaCambio" type="text" class="form-control">
-                
-              </div>
-            
-          
-
-            
-           
-            
-          
-
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button (click)="addTransaction(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
-
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
 
 <div class="modal fade" id="updateTransactionModal" tabindex="-1" role="dialog" aria-labelledby="updateTransactionModalLabel">
   <div class="modal-dialog" role="document">
@@ -219,23 +137,74 @@
   <h1 class="card-title" style="text-align: center;">Cambiar Millas</h1>
   <h6 class="card-subtitle"> 
 
-      <button class="btn btn-success waves-effect waves-light" type="button"(click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
-          <span class="btn-label">
-          <i class="fa fa-plus"></i>
-          </span>                  
-            Cambiar                
-          </button>
+    <!-- Modal Cambiar Inicio -->
 
-    <!-- <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
-      <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
-          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-            <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"/>
-          </svg>
-      </span>            
-      Crear Billetera
-    </button> -->
-    
-    
+     <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Redimir Millas</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  
+        <form [formGroup]="myForm">
+          <div class="modal-body">
+  
+                <div class="form-group text-left">
+                  <label for="billeteraOrigen">billeteraOrigen</label>
+                  
+                      <textarea formControlName="billeteraOrigen" class="form-control" rows="3"></textarea>
+                  
+                </div>
+              
+                <div class="form-group text-left">
+                  <label for="billeteraDestino">billeteraDestino</label>
+                  
+                      <textarea formControlName="billeteraDestino" class="form-control" rows="3"></textarea>
+                  
+                </div>
+                  
+                <div class="form-group text-left">
+                  <label for="valorTransaccion">valorTransaccion</label>
+                  
+                    <input formControlName="valorTransaccion" type="number" class="form-control">
+                  
+                </div>
+  
+                <div class="form-group text-left">
+                  <label for="objetoCambio">objetoCambio</label>
+                  
+                    <input formControlName="objetoCambio" type="text" class="form-control">
+                  
+                </div>
+  
+                <div class="form-group text-left">
+                  <label for="referenciaCambio">referenciaCambio</label>
+                  
+                    <input formControlName="referenciaCambio" type="text" class="form-control">
+                  
+                </div>
+  
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancelar</button>
+            <button (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirmar</button>
+  
+          </div>
+        </form>
+  
+      </div>
+    </ng-template>
+  
+    <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
+      <span class="btn-label" >
+        <i class="fa fa-plus" style="color: #fff;"></i>
+        </span>                  
+        Redimir Millas              
+      </button>
+
+      <!-- Modal Cambiar Fin -->
     
     <code></code></h6>
 
@@ -245,9 +214,9 @@
           <thead>
             <tr>
   
-              <th class="info">Billetera de Origen</th>
+              <th class="info">Billetera Origen</th>
   
-              <th class="info">Billetera de Destino</th>
+              <th class="info">Billetera Destino</th>
   
               <th class="info">Valor Transaccion</th>
 
@@ -257,7 +226,7 @@
 
               <th class="info">Transaccion ID</th>
 
-              <th class="info">Timestamp</th>
+              <th class="info">Fecha</th>
 
   
               <!-- <th class="info-actions">Actions</th> -->
