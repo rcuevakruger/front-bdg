@@ -1,117 +1,3 @@
-<div class="modal fade" id="addTransactionModal" tabindex="-1" role="dialog" aria-labelledby="addTransactionModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title center" id="addTransactionModalLabel">Crear Transaccion</h4>
-          <p class="modal-intro">Llenar el siguiente formulario</p>
-      </div>
-      <form [formGroup]="myForm">
-        <div class="modal-body">
-
-
-              <div class="form-group text-left">
-                <label for="billetera">billetera: </label> <textarea formControlName="billetera" class="form-control" rows="2"></textarea>
-                
-              </div>
-   
-              <div class="form-group text-left">
-                <label for="valor">valor:</label>
-                
-                  <input formControlName="valor" type="number" class="form-control">
-                
-              </div>
-            <!--Ingreso del nuevo boton-->
-             
-            <!-- Fin-->  
-
-
-
-              <label for="motivo">motivo:</label>
-              <div class="checkbox">
-                
-                  <label>
-                    <input
-                      
-                        formControlName="motivo"
-                      
-                      name="motivo"
-                      value="INICIALIZACION"
-                      type="radio"
-                      
-                    />
-                    INICIALIZACION
-                  </label>
-                
-                  <label>
-                    <input
-                      
-                        formControlName="motivo"
-                      
-                      name="motivo"
-                      value="REVERSO"
-                      type="radio"
-                      
-                    />
-                    REVERSO
-                  </label>
-                
-                  <label>
-                    <input
-                      
-                        formControlName="motivo"
-                      
-                      name="motivo"
-                      value="TRANSACCION"
-                      type="radio"
-                      
-                    />
-                    TRANSACCION
-                  </label>
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="sistemaOrigen">sistemaOrigen</label>
-                
-                  <input formControlName="sistemaOrigen" type="text" class="form-control">
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="productoOrigen">productoOrigen</label>
-                
-                  <input formControlName="productoOrigen" type="text" class="form-control">
-                
-              </div>
-            
-          
-
-            
-
-            
-          
-
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button (click)="addTransaction(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
-
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-
 <div class="modal fade" id="updateTransactionModal" tabindex="-1" role="dialog" aria-labelledby="updateTransactionModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -264,12 +150,6 @@
     <h1 class="card-title" style="text-align: center;">Acreditar Millas</h1>
     <h6 class="card-subtitle"> 
   
-        <button class="btn btn-success waves-effect waves-light" type="button"(click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
-            <span class="btn-label">
-            <i class="fa fa-plus"></i>
-            </span>                  
-              Acreditar                
-            </button>
   
       <!-- <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
         <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
@@ -280,11 +160,134 @@
         Crear Billetera
       </button> -->
       
+
+
+
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title">Crear Billetera</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Cuerpo del modal -->
+
+          <form [formGroup]="myForm">
+            <div class="modal-body">
+    
+    
+                  <div class="form-group text-left">
+                    <label for="billetera">billetera: </label> <textarea formControlName="billetera" class="form-control" rows="2"></textarea>
+                    
+                  </div>
+       
+                  <div class="form-group text-left">
+                    <label for="valor">valor:</label>
+                    
+                      <input formControlName="valor" type="number" class="form-control">
+                    
+                  </div>
+    
+    
+    
+    
+                  <label for="motivo">motivo:</label>
+                  <div class="checkbox">
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="motivo"
+                          
+                          name="motivo"
+                          value="INICIALIZACION"
+                          type="radio"
+                          
+                        />
+                        INICIALIZACION
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="motivo"
+                          
+                          name="motivo"
+                          value="REVERSO"
+                          type="radio"
+                          
+                        />
+                        REVERSO
+                      </label>
+                    
+                      <label>
+                        <input
+                          
+                            formControlName="motivo"
+                          
+                          name="motivo"
+                          value="TRANSACCION"
+                          type="radio"
+                          
+                        />
+                        TRANSACCION
+                      </label>
+                    
+                  </div>
+                
+              
+    
+                
+                  <div class="form-group text-left">
+                    <label for="sistemaOrigen">sistemaOrigen</label>
+                    
+                      <input formControlName="sistemaOrigen" type="text" class="form-control">
+                    
+                  </div>
+                
+              
+    
+                
+                  <div class="form-group text-left">
+                    <label for="productoOrigen">productoOrigen</label>
+                    
+                      <input formControlName="productoOrigen" type="text" class="form-control">
+                    
+                  </div>
+                
+              
+    
+                
+    
+                
+              
+    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancel</button>
+              <button (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
+    
+            </div>
+          </form>
+
+          <!-- Fin cuerpo del modal -->
+
+        </div>
+      </ng-template>
+
+      <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
+      <span class="btn-label" >
+        <i class="fa fa-plus" style="color: #fff;"></i>
+        </span>                  
+        Crear Billetera                
+      </button>
+
+      
       
       
       <code></code></h6>
-  
-  
         <div class="table-responsive">
           <table class="table">
             <thead>
