@@ -16,10 +16,10 @@ export const ROUTES: RouteInfo[] = [
     },{
         path: '/component/CobrarMillas', title: 'Cobrar', icon: 'mdi mdi-contrast', class: '', label: '', labelClass: '', extralink: false, submenu: [ ]
     },
-    {
+   /*  {
         path: '', title: 'test', icon: 'mdi mdi-plus', class: 'has-arrow', label: '', labelClass: '', extralink: false,
         submenu: [
-/*             { path: '/component/accordion', title: 'Accordion', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
+            { path: '/component/accordion', title: 'Accordion', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/alert', title: 'Alert', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/carousel', title: 'Carousel', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/dropdown', title: 'Dropdown', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
@@ -31,10 +31,10 @@ export const ROUTES: RouteInfo[] = [
             { path: '/component/tabs', title: 'Tabs', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/timepicker', title: 'Timepicker', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/buttons', title: 'Button', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
-            { path: '/component/cards', title: 'Card', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] }, */
+            { path: '/component/cards', title: 'Card', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
             { path: '/component/Billetera', title: 'Billetera', icon: '', class: '', label: '', labelClass: '', extralink: false, submenu: [] },
         ]
-    },
+    }, */
     /* {
         path: '', title: 'Menu Levels', icon: 'mdi mdi-arrange-send-backward', class: 'has-arrow', label: '', labelClass: '', extralink: false,
         submenu: [
