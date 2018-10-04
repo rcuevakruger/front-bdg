@@ -62,7 +62,7 @@ export class AcreditarMillasComponent implements OnInit {
       sistemaOrigen: this.sistemaOrigen,
       productoOrigen: this.productoOrigen,
       transactionId: this.transactionId,
-      timestamp: this.timestamp
+      // timestamp: this.timestamp
     });
   };
 
@@ -146,7 +146,7 @@ export class AcreditarMillasComponent implements OnInit {
       'sistemaOrigen': this.sistemaOrigen.value,
       'productoOrigen': this.productoOrigen.value,
       'transactionId': this.transactionId.value,
-      'timestamp': this.timestamp.value
+      // 'timestamp': this.timestamp.value
     };
 
     this.myForm.setValue({
@@ -156,7 +156,7 @@ export class AcreditarMillasComponent implements OnInit {
       'sistemaOrigen': null,
       'productoOrigen': null,
       'transactionId': null,
-      'timestamp': null
+      // 'timestamp': null
     });
 
     return this.serviceAcreditarMillas.addTransaction(this.Transaction)
@@ -170,7 +170,7 @@ export class AcreditarMillasComponent implements OnInit {
         'sistemaOrigen': null,
         'productoOrigen': null,
         'transactionId': null,
-        'timestamp': null
+        // 'timestamp': null
       });
     })
     .catch((error) => {
