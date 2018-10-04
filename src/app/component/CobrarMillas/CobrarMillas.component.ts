@@ -59,7 +59,7 @@ export class CobrarMillasComponent implements OnInit {
       referencia: this.referencia,
       motivo: this.motivo,
       transactionId: this.transactionId,
-      timestamp: this.timestamp
+      // timestamp: this.timestamp
     });
   };
 
@@ -142,7 +142,7 @@ export class CobrarMillasComponent implements OnInit {
       'referencia': this.referencia.value,
       'motivo': this.motivo.value,
       'transactionId': this.transactionId.value,
-      'timestamp': this.timestamp.value
+      // 'timestamp': this.timestamp.value
     };
 
     this.myForm.setValue({
@@ -151,7 +151,7 @@ export class CobrarMillasComponent implements OnInit {
       'referencia': null,
       'motivo': null,
       'transactionId': null,
-      'timestamp': null
+      // 'timestamp': null
     });
 
     return this.serviceCobrarMillas.addTransaction(this.Transaction)
@@ -164,7 +164,7 @@ export class CobrarMillasComponent implements OnInit {
         'referencia': null,
         'motivo': null,
         'transactionId': null,
-        'timestamp': null
+        // 'timestamp': null
       });
     })
     .catch((error) => {

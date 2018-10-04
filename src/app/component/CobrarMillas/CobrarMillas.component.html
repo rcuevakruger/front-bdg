@@ -173,7 +173,7 @@
   
                             <tr *ngFor="let asset of allTransactions">
   
-                                <td class="asset-properties">{{asset.billetera}}</td>
+                                <td class="asset-properties">{{asset.billetera | slice:45}}</td>
                             
                                 <td class="asset-properties">{{asset.valorCobro}}</td>
                             
@@ -183,7 +183,7 @@
                             
                                 <td class="asset-properties">{{asset.transactionId}}</td>
                             
-                                <td class="asset-properties">{{asset.timestamp}}</td>
+                                <td class="asset-properties">{{asset.timestamp | date:'medium'}}</td>
                       
                     </tr>
                     </tbody>

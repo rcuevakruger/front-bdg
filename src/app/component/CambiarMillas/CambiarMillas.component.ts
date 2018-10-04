@@ -62,7 +62,7 @@ export class CambiarMillasComponent implements OnInit {
       objetoCambio: this.objetoCambio,
       referenciaCambio: this.referenciaCambio,
       transactionId: this.transactionId,
-      timestamp: this.timestamp
+      // timestamp: this.timestamp
     });
   };
 
@@ -147,7 +147,7 @@ export class CambiarMillasComponent implements OnInit {
       'objetoCambio': this.objetoCambio.value,
       'referenciaCambio': this.referenciaCambio.value,
       'transactionId': this.transactionId.value,
-      'timestamp': this.timestamp.value
+      // 'timestamp': this.timestamp.value
     };
 
     this.myForm.setValue({
@@ -157,7 +157,7 @@ export class CambiarMillasComponent implements OnInit {
       'objetoCambio': null,
       'referenciaCambio': null,
       'transactionId': null,
-      'timestamp': null
+      // 'timestamp': null
     });
 
     return this.serviceCambiarMillas.addTransaction(this.Transaction)
@@ -171,7 +171,7 @@ export class CambiarMillasComponent implements OnInit {
         'objetoCambio': null,
         'referenciaCambio': null,
         'transactionId': null,
-        'timestamp': null
+        // 'timestamp': null
       });
     })
     .catch((error) => {
