@@ -13,14 +13,14 @@ export class LoginComponent implements OnInit, AfterViewInit {
     ngOnInit() {}
 
     ngAfterViewInit() {
-        /*$(function() {
+        $(function() {
             $(".preloader").fadeOut();
         });
         
         $('#to-recover').on("click", function() {
             $("#loginform").slideUp();
             $("#recoverform").fadeIn();
-        });*/
+        });
     }
 
     onLoggedin() {
