@@ -11,7 +11,7 @@ export const routes: Routes = [
     component: FullComponent,
     children: [
         { path: '', redirectTo: '/authentication/login', pathMatch: 'full' },
-        { path: 'Billetera', loadChildren: './component/Billetera.module#BilleteraModule' },
+        { path: 'Billetera', loadChildren: './component/component.module#ComponentsModule' },
         { path: 'component', loadChildren: './component/component.module#ComponentsModule' }
     ]
 }, 
