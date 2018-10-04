@@ -37,6 +37,7 @@ import { ComercioComponent } from "./Comercio/Comercio.component";
 import { EmisorComponent } from "./Emisor/Emisor.component";
 import { PropietarioComponent } from "./Propietario/Propietario.component";
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -74,7 +75,10 @@ import { PropietarioComponent } from "./Propietario/Propietario.component";
     ComercioComponent,
     EmisorComponent,
     PropietarioComponent,
-  ]
+  ],
+
 })
+
+
 
 export class ComponentsModule {}

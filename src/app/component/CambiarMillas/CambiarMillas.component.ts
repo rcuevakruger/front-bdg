@@ -19,6 +19,7 @@ import 'rxjs/add/operator/toPromise';
 import { ViewEncapsulation } from '@angular/core';
 import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
+
 @Component({
   selector: 'app-cambiarmillas',
   templateUrl: './CambiarMillas.component.html',
