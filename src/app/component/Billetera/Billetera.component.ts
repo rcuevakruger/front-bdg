@@ -78,6 +78,31 @@ export class BilleteraComponent implements OnInit {
     }
   }
 
+/*   @ViewChild(DatatableComponent) table: DatatableComponent;
+    constructor() {
+        this.rows = data;
+        this.temp = [...data];
+        setTimeout(() => { this.loadingIndicator = false; }, 1500);                                   
+    }
+
+  updateFilter(event) {
+    const val = event.target.value.toLowerCase();
+
+
+
+    // filter our data
+    const temp = this.temp.filter(function(d) {
+      return d.name.toLowerCase().indexOf(val) !== -1 || !val;
+    });
+
+    // update the rows
+    this.rows = temp;
+    // Whenever the filter changes, always go back to the first page
+    this.table = data;
+    } */
+
+
+
   loadAll(): Promise<any> {
     const tempList = [];
     return this.serviceBilletera.getAll()

@@ -9,36 +9,9 @@
   <div class="card">
       <div class="card-body">
 
-<!-- 
-
-                      <ng-template #content let-c="close" let-d="dismiss">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Modal title</h4>
-                          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <p>One fine body&hellip;</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
-                        </div>
-                      </ng-template>
-      
-              <button class="btn btn-lg btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">Launch demo modal</button>
-              <div class="m-t-20">{{closeResult}}</div> -->
-
 
           <h1 class="card-title" style="text-align: center;">Billetera</h1>
-          <h6 class="card-subtitle"> 
-<!-- 
-              <button class="btn btn-success waves-effect waves-light" type="button"(click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
-                  <span class="btn-label">
-                  <i class="fa fa-plus"></i>
-                  </span>                  
-                    Crear Billetera                
-                  </button> -->
+          
 
 
                       <ng-template #content let-c="close" let-d="dismiss">
@@ -48,6 +21,8 @@
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
+
+                      
                       <div class="modal-body">
 
                         <!-- Cuerpo del modal -->
@@ -90,26 +65,28 @@
 
                       </div>
                     </ng-template>
-            
-                    <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
-                    <span class="btn-label" >
-                      <i class="fa fa-plus" style="color: #fff;"></i>
-                      </span>                  
-                      Crear Billetera                
-                    </button>
+
+                    <div class="row">
+                      <div class="col-md-6 pull-left">
+                        <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
+                        <span class="btn-label" >
+                          <i class="fa fa-plus" style="color: #fff;"></i>
+                          </span>                  
+                          Crear Billetera                
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <form class="w-50 m-b-30 pull-right">
+                          <input  type='text' class="form-control" style="min-height:43px;" placeholder='Buscar' (keyup)='updateFilter($event)'   />
+                        </form> 
+                      </div>
+                  </div>
+           
+        
+            <code></code>
+          
 
 
-            <!-- <button class="btn btn-outline-primary" (click)="resetForm()" data-toggle="modal" data-target="#addAssetModal">
-              <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:middle;">
-                  <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                    <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"/>
-                  </svg>
-              </span>            
-              Crear Billetera
-            </button> -->
-            
-            
-            <code></code></h6>
           <div class="table-responsive">
               <table class="table">
                   <thead>
@@ -136,7 +113,7 @@
                         <td class="asset-properties">{{asset.valorActual}}</td>
                     
                     <td>
-                      <button (click)="getForm(asset.idBilletera);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateAssetModal">
+                      <button (click)="getForm(asset.idBilletera);" type="button" class="btn btn-update pull-right" data-toggle="modal" data-target="#updateAssetModal">
                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                           width="12.8px" height="12.8px" viewBox="0 0 30.7 30.7" style="enable-background:new 0 0 30.7 30.7;" xml:space="preserve">
                       <g>
@@ -149,7 +126,7 @@
                       </svg>
                       </button>
         
-                      <button (click)="setId(asset.idBilletera);" type="button" class="btn btn-delete" data-toggle="modal" data-target="#deleteAssetModal">
+                      <button (click)="setId(asset.idBilletera);" type="button" class="btn btn-delete pull-right" data-toggle="modal" data-target="#deleteAssetModal">
                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                           width="13.8px" height="16px" viewBox="0 0 65.9 76.2" style="enable-background:new 0 0 65.9 76.2;" xml:space="preserve">
                       <path d="M42.8,60.2V22.6c0-1.7-1.3-3-3-3s-3,1.3-3,3v37.6c0,1.7,1.3,3,3,3S42.8,61.9,42.8,60.2z M29.1,60.2V22.6c0-1.7-1.3-3-3-3
