@@ -23,7 +23,6 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
 @Component({
   selector: 'app-acreditarmillas',
   templateUrl: './AcreditarMillas.component.html',
-  styleUrls: ['./AcreditarMillas.component.css'],
   providers: [AcreditarMillasService],
   styles: [`
     .dark-modal .modal-content {

@@ -24,15 +24,7 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
   selector: 'app-cobrarmillas',
   templateUrl: './CobrarMillas.component.html',
   providers: [CobrarMillasService],
-  styles: [`
-  .dark-modal .modal-content {
-    background-color: #009efb;
-    color: white;
-  }
-  .dark-modal .close {
-    color: white;   
-  }
-`]
+  styleUrls: ['./CobrarMillas.component.css'],
 })
 export class CobrarMillasComponent implements OnInit {
   closeResult: string;
