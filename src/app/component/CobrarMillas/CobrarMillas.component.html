@@ -59,53 +59,35 @@
                                 </div>
 
                                 <label for="motivo">Motivo</label>
+                              
+                                  
+                                    
                                 <div class="custom-control custom-radio">
-                                  
-                                    
-                                      <input
-
-                                        formControlName="motivo"
-                                        name="motivo"
-                                        value="INICIALIZACION"
-                                        type="radio"
-                                        
-                                      />
-                                    <label>&nbsp;&nbsp;Inicialización </label> 
-                                   
-                                    
-
+                                  <input formControlName="motivo" type="radio" id="customRadio1" name="motivo"value="INICIALIZACION" class="custom-control-input">
+                                  <label class="custom-control-label" for="customRadio1">Inicialización</label>
+                                </div>
+              
+                               
                                     <br>
-                                  
-                                      <input
-                                        
-                                          formControlName="motivo"
-                                        
-                                        name="motivo"
-                                        value="REVERSO"
-                                        type="radio"
-                                        
-                                      />
-                                      <label>&nbsp;&nbsp;Reverso </label> 
-
+              
+                                <div class="custom-control custom-radio">
+                                  <input formControlName="motivo" type="radio" id="customRadio2" name="motivo" value="REVERSO" class="custom-control-input">
+                                  <label class="custom-control-label" for="customRadio2">Reverso</label>
+                                </div>
+              
                                     <br>
-                                                                      
-                                      <input
-                                        
-                                          formControlName="motivo"
-                                        
-                                        name="motivo"
-                                        value="TRANSACCION"
-                                        type="radio"
-                                        
-                                      />
-                                      <label>&nbsp;&nbsp;Transacción </label> 
-                                  
+              
+                                <div class="custom-control custom-radio">
+                                  <input formControlName="motivo" type="radio" id="customRadio3" name="motivo" value="TRANSACCION" class="custom-control-input">
+                                  <label class="custom-control-label" for="customRadio3">Transacción</label>
                                 </div>
                                
-                          </div>
+                                 <br>
+
                           <div class="modal-footer" style="text-align: center; display: block;">
                               <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancel</button>
                               <button style="color:white;" (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                          </div>
                           </div>
                         </form>
             
