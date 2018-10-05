@@ -17,11 +17,11 @@
 
 
                 <ng-template #content let-c="close" let-d="dismiss">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Cobrar millas</h4>
-                      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                    <div class="modal-header" style="text-align: center; display: block;">
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">Cobrar millas</h4>
                     </div>
                     <div class="modal-body">
             
@@ -34,7 +34,7 @@
                                 <div class="form-group text-left">
                                   <label for="billetera">Billetera</label>
                                   
-                                      <textarea formControlName="billetera" class="form-control" rows="3"></textarea>
+                                      <textarea formControlName="billetera" class="form-control" rows="1"></textarea>
                                   
                                 </div>
                               
@@ -103,7 +103,7 @@
                                 </div>
                                
                           </div>
-                          <div class="modal-footer">
+                          <div class="modal-footer" style="text-align: center; display: block;">
                               <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancel</button>
                               <button style="color:white;" (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
                           </div>
