@@ -26,8 +26,6 @@
       </button> -->
       
 
-
-
       <ng-template #content let-c="close" let-d="dismiss">
         <div class="modal-header">
           <h4 class="modal-title">Acreditar millas</h4>
@@ -40,7 +38,7 @@
           <!-- Cuerpo del modal -->
 
           <form [formGroup]="myForm">
-            <div class="modal-body">
+            <div class="modal-body anyClass" >
     
     
                   <div class="form-group text-left">
@@ -142,12 +140,21 @@
         </div>
       </ng-template>
 
-      <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
-      <span class="btn-label" >
-        <i class="fa fa-plus" style="color: #fff;"></i>
-        </span>                  
-        Acreditar                
-      </button>
+      <div class="row">
+        <div class="col-md-6 pull-left">
+          <button class="btn btn-success waves-effect waves-light" style="color:#fff;" (click)="open2(content)">
+          <span class="btn-label" >
+            <i class="fa fa-plus" style="color: #fff;"></i>
+            </span>                  
+            Acreditar              
+          </button>
+        </div>
+        <div class="col-md-6">
+          <form class="w-50 m-b-30 pull-right">
+            <input  type='text' class="form-control" style="min-height:43px;" placeholder='Buscar' (keyup)='updateFilter($event)'   />
+          </form> 
+        </div>
+      </div>
 
       
       

@@ -19,7 +19,7 @@ import 'rxjs/add/operator/switchMap';
   selector: 'app-billetera',
   templateUrl: './Billetera.component.html',
   encapsulation: ViewEncapsulation.None,
-  // styleUrls: ['./Billetera.component.css'],
+ styleUrls: ['./Billetera.component.css'],
   providers: [BilleteraService],
   styles: [`
     .dark-modal .modal-content {
