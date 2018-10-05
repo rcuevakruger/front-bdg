@@ -7,3 +7,7 @@
     right: auto;
 }
 
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    border-radius: 50%;
+    background-color: orange;
+}
