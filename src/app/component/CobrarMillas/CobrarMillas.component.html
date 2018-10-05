@@ -57,30 +57,25 @@
                                     <input formControlName="referencia" type="text" class="form-control">
                                   
                                 </div>
-                              
-                            
-                  
-                              
+
                                 <label for="motivo">Motivo</label>
-                                <div class="checkbox">
+                                <div class="custom-control custom-radio">
                                   
-                                    <label>
+                                    
                                       <input
-                                        
-                                          formControlName="motivo"
-                                        
+
+                                        formControlName="motivo"
                                         name="motivo"
                                         value="INICIALIZACION"
                                         type="radio"
                                         
                                       />
-                                      INICIALIZACION
-                                    </label>
+                                    <label>&nbsp;&nbsp;Inicialización </label> 
+                                   
                                     
 
                                     <br>
                                   
-                                    <label>
                                       <input
                                         
                                           formControlName="motivo"
@@ -90,12 +85,10 @@
                                         type="radio"
                                         
                                       />
-                                      REVERSO
-                                    </label>
+                                      <label>&nbsp;&nbsp;Reverso </label> 
 
                                     <br>
                                                                       
-                                    <label>
                                       <input
                                         
                                           formControlName="motivo"
@@ -105,15 +98,14 @@
                                         type="radio"
                                         
                                       />
-                                      TRANSACCION
-                                    </label>
+                                      <label>&nbsp;&nbsp;Transacción </label> 
                                   
                                 </div>
                                
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal" (click)="d('Cross click')">Cancel</button>
-                              <button (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
+                              <button style="color:white;" (click)="addTransaction(myForm);d('Cross click');" type="submit" class="btn btn-success" data-dismiss="modal">Confirm</button>
                           </div>
                         </form>
             

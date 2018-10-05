@@ -24,7 +24,6 @@ import {NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bo
   selector: 'app-cobrarmillas',
   templateUrl: './CobrarMillas.component.html',
   providers: [CobrarMillasService],
-  styleUrls: ['./CobrarMillas.component.css'],
 })
 export class CobrarMillasComponent implements OnInit {
   closeResult: string;
